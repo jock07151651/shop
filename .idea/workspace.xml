@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ea616c1e-c37c-4510-826d-773f05b91f14" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="tsconfig.json" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-image" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-installer" />
+      <path value="$PROJECT_DIR$/vendor/phpmailer/phpmailer" />
+      <path value="$PROJECT_DIR$/vendor/phpoffice/phpexcel" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1fJoXpm3bqeiVcol03pRXPLoJHi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\phpstudy_pro\WWW\shop\application\admin\controller" />
+      <recent name="D:\phpstudy_pro\WWW\shop\application\admin\model" />
+      <recent name="D:\phpstudy_pro\WWW\shop\application\admin\view" />
+      <recent name="D:\phpstudy_pro\WWW\shop\application\index\model" />
+      <recent name="D:\phpstudy_pro\WWW\shop\application\index\controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\phpstudy_pro\WWW\shop\application\admin\view\index" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ea616c1e-c37c-4510-826d-773f05b91f14" name="Default Changelist" comment="" />
+      <created>1595945598621</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595945598621</updated>
+      <workItem from="1595945601496" duration="3887000" />
+      <workItem from="1596028340626" duration="6818000" />
+      <workItem from="1596113796968" duration="7755000" />
+      <workItem from="1596202156122" duration="623000" />
+      <workItem from="1596334918917" duration="650000" />
+      <workItem from="1596845724911" duration="1682000" />
+      <workItem from="1596847441286" duration="1798000" />
+      <workItem from="1596849263872" duration="1567000" />
+      <workItem from="1596851691004" duration="1794000" />
+      <workItem from="1596855096642" duration="14000" />
+      <workItem from="1596855209731" duration="33000" />
+      <workItem from="1596855286231" duration="58000" />
+      <workItem from="1596855803266" duration="16000" />
+      <workItem from="1596855837895" duration="24000" />
+      <workItem from="1596855949630" duration="112000" />
+      <workItem from="1596856168310" duration="13000" />
+      <workItem from="1596856644580" duration="68000" />
+      <workItem from="1596856775582" duration="31950000" />
+      <workItem from="1596936103794" duration="34025000" />
+      <workItem from="1597018296479" duration="604000" />
+      <workItem from="1597019263389" duration="20520000" />
+      <workItem from="1597051546260" duration="1859000" />
+      <workItem from="1597053640368" duration="9664000" />
+      <workItem from="1597105110907" duration="34251000" />
+      <workItem from="1597192080537" duration="7720000" />
+      <workItem from="1597203252707" duration="411000" />
+      <workItem from="1597203694042" duration="22597000" />
+      <workItem from="1597232674652" duration="2202000" />
+      <workItem from="1597235336197" duration="1840000" />
+      <workItem from="1597238789864" duration="6152000" />
+      <workItem from="1597277916421" duration="14831000" />
+      <workItem from="1597301223294" duration="1544000" />
+      <workItem from="1597303829471" duration="14000" />
+      <workItem from="1597303884972" duration="19070000" />
+      <workItem from="1597364446998" duration="34827000" />
+      <workItem from="1597455744516" duration="19837000" />
+      <workItem from="1597538497330" duration="26009000" />
+      <workItem from="1597622623523" duration="39237000" />
+      <workItem from="1597710037415" duration="34872000" />
+      <workItem from="1597796245276" duration="9291000" />
+      <workItem from="1597815062602" duration="10911000" />
+      <workItem from="1597829287595" duration="12667000" />
+      <workItem from="1597883909946" duration="31990000" />
+      <workItem from="1597974317626" duration="23927000" />
+      <workItem from="1598013303636" duration="1962000" />
+      <workItem from="1598060470363" duration="4645000" />
+      <workItem from="1598067040503" duration="12371000" />
+      <workItem from="1598148959420" duration="7086000" />
+      <workItem from="1598230097755" duration="17556000" />
+      <workItem from="1598315089102" duration="1977000" />
+      <workItem from="1598420536862" duration="13833000" />
+      <workItem from="1598494977831" duration="21000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="553" y="280" key="FileChooserDialogImpl" timestamp="1596846217431">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="553" y="280" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596846217431" />
+    <state x="516" y="244" key="NewPhpClassDialog" timestamp="1596114059107">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="516" y="244" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596114059107" />
+    <state x="517" y="245" key="RollbackChangesDialog" timestamp="1595946577092">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="517" y="245" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595946577092" />
+    <state x="226" y="150" key="SettingsEditor" timestamp="1596856683749">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="226" y="150" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1596856683749" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1596114754278">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1596114754278" />
+  </component>
+</project>

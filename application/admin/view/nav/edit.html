@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {include file="public/header" /}
+</head>
+<body>
+<!-- 头部 -->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="navbar-container">
+            <!-- Navbar Barnd -->
+            <div class="navbar-header pull-left">
+                <a href="#" class="navbar-brand">
+                    <small>
+                        <img src="__ADMIN__/images/logo.png" alt="">
+                    </small>
+                </a>
+            </div>
+            <!-- /Navbar Barnd -->
+            <!-- Sidebar Collapse -->
+            <div class="sidebar-collapse" id="sidebar-collapse">
+                <i class="collapse-icon fa fa-bars"></i>
+            </div>
+            <!-- /Sidebar Collapse -->
+            <!-- Account Area and Settings -->
+            <div class="navbar-header pull-right">
+                <div class="navbar-account">
+                    <ul class="account-area">
+                        <li>
+                            <a class="login-area dropdown-toggle" data-toggle="dropdown">
+                                <div class="avatar" title="View your public profile">
+                                    <img src="__ADMIN__/images/adam-jansen.jpg">
+                                </div>
+                                <section>
+                                    <h2><span class="profile"><span>admin</span></span></h2>
+                                </section>
+                            </a>
+                            <!--Login Area Dropdown-->
+                            <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
+                                <li class="username"><a>David Stevenson</a></li>
+                                <li class="dropdown-footer">
+                                    <a href="/admin/user/logout.html">
+                                        退出登录
+                                    </a>
+                                </li>
+                                <li class="dropdown-footer">
+                                    <a href="/admin/user/changePwd.html">
+                                        修改密码
+                                    </a>
+                                </li>
+                            </ul>
+                            <!--/Login Area Dropdown-->
+                        </li>
+                        <!-- /Account Area -->
+                        <!--Note: notice that setting div must start right after account area list.
+                            no space must be between these elements-->
+                        <!-- Settings -->
+                    </ul>
+                </div>
+            </div>
+            <!-- /Account Area and Settings -->
+        </div>
+    </div>
+</div>
+
+<!-- /头部 -->
+
+<div class="main-container container-fluid">
+    <div class="page-container">
+        <!-- Page Sidebar -->
+        {include file="public/left" /}
+        <!-- /Page Sidebar -->
+        <!-- Page Content -->
+        <div class="page-content">
+            <!-- Page Breadcrumb -->
+            <div class="page-breadcrumbs">
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="{:url('Index/index')}">系统</a>
+                    </li>
+                    <li>
+                        <a href="{:url('lists')}">导航管理</a>
+                    </li>
+                    <li class="active">修改导航</li>
+                </ul>
+            </div>
+            <!-- /Page Breadcrumb -->
+
+            <!-- Page Body -->
+            <div class="page-body">
+
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12 col-xs-12">
+                        <div class="widget">
+                            <div class="widget-header bordered-bottom bordered-blue">
+                                <span class="widget-caption">修改导航</span>
+                            </div>
+                            <div class="widget-body">
+                                <div id="horizontal-form">
+                                    <form class="form-horizontal" role="form" action="{:url('edit')}" method="post">
+                                        <input type="hidden" name="id" value="{$navData.id}">
+                                        <div class="form-group">
+                                            <label for="username"
+                                                   class="col-sm-2 control-label no-padding-right">导航名称</label>
+                                            <div class="col-sm-6">
+                                                <input class="form-control" id="nav_name"  name="nav_name"
+                                                       type="text" value="{$navData.nav_name}">
+                                            </div>
+                                            <p class="help-block col-sm-4 red">* 必填</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="username"
+                                                   class="col-sm-2 control-label no-padding-right">导航网址</label>
+                                            <div class="col-sm-6">
+                                                <input class="form-control" id="nav_url"  name="nav_url"
+                                                       type="text" value="{$navData.nav_url}">
+                                            </div>
+                                            <p class="help-block col-sm-4 red">* 必填</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="status" class="col-sm-2 control-label no-padding-right">打开新页面</label>
+                                            <div class="radio" style="float: left;padding-left: 15px;">
+                                                <label>
+                                                    <input type="radio" {if condition="$navData.open eq 1"}checked{/if}
+                                                           name="open" class="colored-blue" checked value="1">
+                                                    <span class="text">是</span>
+                                                </label>
+                                            </div>
+                                            <div class="radio" style="float: left;padding-right: 10px;padding-left: 15px;">
+                                                <label>
+                                                    <input type="radio" {if condition="$navData.open eq 2"}checked{/if}
+                                                           name="open" class="colored-blue" value="2">
+                                                    <span class="text">否</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="username" class="col-sm-2 control-label no-padding-right">导航位置</label>
+                                            <div class="col-sm-6">
+                                                <select name="pos">
+                                                    <option {if condition="$navData['pos'] eq 'top'"}selected{/if} value="top">顶部</option>
+                                                    <option {if condition="$navData['pos'] eq 'mid'"}selected{/if} value="mid">中部</option>                                                                    </option>
+                                                    <option {if condition="$navData['pos'] eq 'bottom'"}selected{/if} value="bottom">底部</option>                                                       </option>
+                                                </select>
+                                            </div>
+                                            <p class="help-block col-sm-4 red">* 必填</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-offset-2 col-sm-10">
+                                                <button type="submit" class="btn btn-default">保存信息</button>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /Page Body -->
+        </div>
+        <!-- /Page Content -->
+    </div>
+</div>
+
+<!--Basic Scripts-->
+{include file="public/footer" /}
+
+
+</body>
+</html>

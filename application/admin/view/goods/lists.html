@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {include file="public/header" /}
+</head>
+<body>
+<!-- 头部 -->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="navbar-container">
+            <!-- Navbar Barnd -->
+            <div class="navbar-header pull-left">
+                <a class="navbar-brand" href="#">
+                    <small>
+                        <img alt="" src="__ADMIN__/images/logo.png">
+                    </small>
+                </a>
+            </div>
+            <!-- /Navbar Barnd -->
+            <!-- Sidebar Collapse -->
+            <div class="sidebar-collapse" id="sidebar-collapse">
+                <i class="collapse-icon fa fa-bars"></i>
+            </div>
+            <!-- /Sidebar Collapse -->
+            <!-- Account Area and Settings -->
+            <div class="navbar-header pull-right">
+                <div class="navbar-account">
+                    <ul class="account-area">
+                        <li>
+                            <a class="login-area dropdown-toggle" data-toggle="dropdown">
+                                <div class="avatar" title="View your public profile">
+                                    <img src="__ADMIN__/images/adam-jansen.jpg">
+                                </div>
+                                <section>
+                                    <h2><span class="profile"><span>admin</span></span></h2>
+                                </section>
+                            </a>
+                            <!--Login Area Dropdown-->
+                            <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
+                                <li class="username"><a>David Stevenson</a></li>
+                                <li class="dropdown-footer">
+                                    <a href="/admin/user/logout.html">
+                                        退出登录
+                                    </a>
+                                </li>
+                                <li class="dropdown-footer">
+                                    <a href="/admin/user/changePwd.html">
+                                        修改密码
+                                    </a>
+                                </li>
+                            </ul>
+                            <!--/Login Area Dropdown-->
+                        </li>
+                        <!-- /Account Area -->
+                        <!--Note: notice that setting div must start right after account area list.
+                            no space must be between these elements-->
+                        <!-- Settings -->
+                    </ul>
+                </div>
+            </div>
+            <!-- /Account Area and Settings -->
+        </div>
+    </div>
+</div>
+
+<!-- /头部 -->
+
+<div class="main-container container-fluid">
+    <div class="page-container">
+        <!-- Page Sidebar -->
+        {include file="public/left" /}
+        <!-- /Page Sidebar -->
+        <!-- Page Content -->
+        <div class="page-content">
+            <!-- Page Breadcrumb -->
+            <div class="page-breadcrumbs">
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="{:url('Index/index')}">系统</a>
+                    </li>
+                    <li class="active">商品类型管理</li>
+                </ul>
+            </div>
+            <!-- /Page Breadcrumb -->
+
+            <!-- Page Body -->
+            <div class="page-body">
+
+                <button class="btn btn-sm btn-azure btn-addon"
+                        onClick="javascript:window.location.href = '{:url(\'add\')}'" tooltip="添加用户" type="button">
+                    <i class="fa fa-plus"></i> Add
+                </button>
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12 col-xs-12">
+                        <div class="widget">
+                            <div class="widget-body">
+                                <div class="flip-scroll">
+                                    <table class="table table-bordered table-hover">
+                                        <thead class="">
+                                        <tr>
+                                            <th class="text-center" width="4%">ID</th>
+                                            <th>品牌名称</th>
+                                            <th class="text-center" width="10%">商品编号</th>
+                                            <th class="text-center" width="6%">缩略图</th>
+                                            <th class="text-center" width="6%">市场价</th>
+                                            <th class="text-center" width="6%">零售价</th>
+                                            <th class="text-center" width="5%">上架</th>
+                                            <th class="text-center" width="9%">栏目</th>
+                                            <th class="text-center" width="8%">品牌</th>
+                                            <th class="text-center" width="6%">类型</th>
+                                            <th class="text-center" width="6%">重量</th>
+                                            <th class="text-center" width="4%">单位</th>
+                                            <th class="text-center" width="4%">库存</th>
+                                            <th class="text-center" width="17%">操作</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        {volist name="goodsList" id="list"}
+                                        <tr>
+                                            <td align="center">{$list.id}</td>
+                                            <td>{$list.goods_name}</td>
+                                            <td align="center">{$list.goods_code}</td>
+                                            <td align="center">
+                                                {if condition="$list.sm_thumb"}
+                                                <img src="__UPLOADS__/{$list.sm_thumb}" height="50" alt="">
+                                                {else}
+                                                暂无图片
+                                                {/if}
+                                            </td>
+                                            <td align="center">{$list.markte_price}</td>
+                                            <td align="center">{$list.shop_price}</td>
+                                            <td align="center">
+                                                {if condition="$list.on_sale eq 1"}
+                                                <img src="__ADMIN__/images/dispatch_jump_success.png" height="25" alt="">
+                                                {else}
+                                                <img src="__ADMIN__/images/dispatch_jump_error.png" height="25" alt="">
+                                                {/if}
+                                            </td>
+                                            <td align="center">{$list.cate_name}</td>
+                                            <td align="center">
+                                                {if condition="$list.brand_name"}{$list.brand_name}{else}未设置{/if}
+                                            </td>
+                                            <td align="center">
+                                                {if condition="$list.type_name"}{$list.type_name}{else}未设置{/if}
+                                            </td>
+                                            <td align="center">{$list.goods_weight}</td>
+                                            <td align="center">{$list.weight_unit}</td>
+                                            <td align="center">{$list.gn}</td>
+                                            <td align="center">
+                                                <a class="btn btn-darkorange btn-sm shiny" href="{:url('Goods/product_stock',array('goods_id'=>$list.id))}">
+                                                    <i class="fa fa-edit"></i> 库存
+                                                </a>
+                                                <a class="btn btn-primary btn-sm shiny" href="{:url('edit',array('id'=>$list.id))}">
+                                                    <i class="fa fa-edit"></i> 编辑
+                                                </a>
+                                                <a class="btn btn-danger btn-sm shiny" href="#"
+                                                   onClick="warning('确实要删除吗', '{:url(\'del\',array(\'id\'=>$list.id))}')">
+                                                    <i class="fa fa-trash-o"></i> 删除
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        {/volist}
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div style="padding-top: 10px;text-align: right">
+                                    {$goodsList->render()}
+                                </div>
+                                <div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /Page Body -->
+        </div>
+        <!-- /Page Content -->
+    </div>
+</div>
+
+<!--Basic Scripts-->
+{include file="public/footer" /}
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
